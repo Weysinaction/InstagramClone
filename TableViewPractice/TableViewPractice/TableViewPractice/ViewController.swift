@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  InstagramClone
+//  TableViewPractice
 //
-//  Created by Владислав Лазарев on 20.07.2021.
+//  Created by Владислав Лазарев on 22.07.2021.
 //
 
 import UIKit
