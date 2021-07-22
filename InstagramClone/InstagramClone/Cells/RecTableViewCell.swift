@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RecTableViewCell: UITableViewCell {
+final class RecTableViewCell: UITableViewCell {
 
     //MARK: IBOutlet
     @IBOutlet private var imageOne: UIImageView!

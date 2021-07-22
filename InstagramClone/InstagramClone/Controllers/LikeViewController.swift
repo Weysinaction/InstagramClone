@@ -7,6 +7,6 @@
 
 import UIKit
 
-class LikeViewController: UIViewController {
+final class LikeViewController: UIViewController {
 
 }

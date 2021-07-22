@@ -10,7 +10,7 @@ import UIKit
 final class ViewController: UIViewController {
 
     //MARK: IBOutlet
-    @IBOutlet var storiesTableView: UITableView!
+    @IBOutlet private var storiesTableView: UITableView!
     
     //MARK: private properties
     private let storiesID = "StoriesCell"
