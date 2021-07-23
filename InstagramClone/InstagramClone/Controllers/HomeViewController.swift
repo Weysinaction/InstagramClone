@@ -16,12 +16,14 @@ final class ViewController: UIViewController {
     private let storiesID = "StoriesCell"
     private let postID = "PostCell"
     private let recID = "RecCell"
+    private let refresh = UIRefreshControl()
     
     //MARK: View Controller's method
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupViewController()
+        setupRefresh()
     }
 
     //MARK: private methods
@@ -29,6 +31,16 @@ final class ViewController: UIViewController {
         storiesTableView.register(UINib(nibName: "StoriesTableViewCell", bundle: nil), forCellReuseIdentifier: storiesID)
         storiesTableView.register(UINib(nibName: "RecTableViewCell", bundle: nil), forCellReuseIdentifier: recID)
         storiesTableView.register(UINib(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: postID)
+    }
+    
+    private func setupRefresh() {
+        refresh.addTarget(self, action: #selector(refreshTableView), for: .valueChanged)
+        refresh.tintColor = .white
+        storiesTableView.addSubview(refresh)
+    }
+    
+    @objc private func refreshTableView() {
+        refresh.endRefreshing()
     }
 }
 
