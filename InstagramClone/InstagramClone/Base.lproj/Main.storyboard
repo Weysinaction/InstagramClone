@@ -1371,7 +1371,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="actionsTableView" destination="YmW-9u-HGp" id="Qpb-CK-bzq"/>
                         <outlet property="followButton" destination="bJz-ia-gc7" id="Dfw-3d-tLW"/>
                     </connections>
                 </tableViewController>

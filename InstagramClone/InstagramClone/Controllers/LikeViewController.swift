@@ -11,7 +11,6 @@ final class LikeViewController: UITableViewController {
 
     //MARK: IBOutlet
     @IBOutlet private var followButton: UIButton!
-    @IBOutlet private var actionsTableView: UITableView!
     
     //MARK: private properties
     let refresh = UIRefreshControl()
@@ -37,7 +36,7 @@ final class LikeViewController: UITableViewController {
     private func setupRefresh() {
         refresh.addTarget(self, action: #selector(refreshTableView), for: .valueChanged)
         refresh.tintColor = .white
-        actionsTableView.addSubview(refresh)
+        self.tableView.addSubview(refresh)
     }
     
     @objc func refreshTableView() {
